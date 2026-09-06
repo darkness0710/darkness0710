@@ -18,8 +18,10 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Ho_Chi_Minh
 
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+          # Calendar phang, o vuong 11x11 nhu tren profile GitHub.
+          # isocalendar (2.5D) da bo: goc nghieng lam kho doc muc do dong gop.
+          plugin_calendar: yes
+          plugin_calendar_limit: 1
 
           plugin_languages: yes
           plugin_languages_indepth: yes
