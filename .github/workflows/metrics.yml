@@ -25,8 +25,15 @@ jobs:
           plugin_languages_indepth: yes
           plugin_languages_details: percentage, bytes-size
           plugin_languages_limit: 8
+          # theme CSS/SCSS vendored, khong phai code minh viet
+          plugin_languages_skipped: >-
+            darkness0710.github.io,
+            darkness0710.github.io.old,
+            ousayshop_v1_vuex
 
           plugin_habits: yes
           plugin_habits_charts: yes
+          # event cu tro toi commit da bi force-push xoa -> plugin crash
+          plugin_habits_skipped: tool_hota-vod-cutter
           plugin_followup: yes
           plugin_achievements: yes
