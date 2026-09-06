@@ -31,9 +31,10 @@ jobs:
             darkness0710.github.io.old,
             ousayshop_v1_vuex
 
-          plugin_habits: yes
-          plugin_habits_charts: yes
-          # event cu tro toi commit da bi force-push xoa -> plugin crash
-          plugin_habits_skipped: tool_hota-vod-cutter
           plugin_followup: yes
-          plugin_achievements: yes
+          plugin_lines: yes
+
+          # Da tat, deu la bug thuong nguon cua metrics (2026-09-07):
+          #   plugin_habits       -> TypeError tren luong event, khong sua duoc bang config
+          #   plugin_achievements -> van truy van Projects (classic), da bi GitHub khai tu
+          # Bat lai khi metrics vá xong; de bat se in "Unexpected error" len card.
